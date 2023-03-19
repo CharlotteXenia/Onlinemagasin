@@ -1,0 +1,48 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/******** header og navbar ********/
+
+header {
+    background-color: #EEE1CA;
+    border-bottom-width: 2px; 
+    border-bottom-color: brown;
+    border-bottom-style: solid;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+    height: 75px;
+
+}
+
+#logo {
+    width: 200px;
+    height: 48px;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    display: flex; 
+    justify-content: space-around;
+
+}
+
+nav  a:hover{
+    color: brown;
+}
