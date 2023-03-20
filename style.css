@@ -57,7 +57,7 @@ nav  a:hover{
 /******** main og kort ********/
 
 .kortholder {
-    height: 800px;
+    height: 775px;
     width: 100%;
     background-color: aqua;
     display: flex;
@@ -66,13 +66,13 @@ nav  a:hover{
 
 
 .placeholder1 {
-    height: 700px;
+    height: 600px;
     width: 350px;
     background-color: rgb(0, 128, 68);
 }
 
 .placeholder2 {
-    height: 700px;
+    height: 650px;
     width: 350px;
     background-color: purple;
 }
@@ -81,4 +81,11 @@ nav  a:hover{
     height: 700px;
     width: 350px;
     background-color: rgb(220, 220, 22);
+}
+
+#citat {
+    color: #ba4a1a;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;   
 }
