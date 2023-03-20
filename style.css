@@ -20,18 +20,17 @@ header {
     border-bottom-width: 2px; 
     border-bottom-color: #ba4a1a;
     border-bottom-style: solid;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 17px;
     position: relative;
-    height: 75px;
+    height: 100px;
+    padding-bottom: 10px;
 
 }
 
 #logo {
-    width: 200px;
-    height: 48px;
-    padding-right: 75px;
-    padding-left: 75px;
+    width: 300px;
+    height: 100px;
+    padding-bottom: 5px;   
 }
 
 nav {
@@ -54,65 +53,80 @@ nav  a:hover{
     color: #e9bb60;
 }
 
-/* Dropdown Button */
+.venstremenu {
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    padding-bottom: 15px;
+}
+
+.højremenu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+/******** Dropdown menu ********/
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    background-color: #EEE1CA;
+    color: #ba4a1a;
+    padding: px;
+    font-size: 17px;
+    border:#ba4a1a
   }
   
-  /* The container <div> - needed to position the dropdown content */
+  /******** div til at holde på indhold ********/
   .dropdown {
+    z-index: 100;
     position: relative;
     display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
+  /******** Dropdown indhold ********/
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #EEE1CA;
+    min-width: 130px;
+    font-size: 14px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
+  /******** Link-indhold ********/
   .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: #ba4a1a;
+    padding: 10px 10px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {
+    color: #e9bb60;
+  }
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 
 
 
 /******** main og kort ********/
 
-.kortholder {
+/**.kortholder {
     height: 775px;
     width: 100%;
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
+}**/
 
 .femkort {
     height: 775px;
     width: 100%;
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -133,38 +147,92 @@ nav  a:hover{
 
 .placeholder3 {
     height: 700px;
-    width: 400px;
+    width: 450px;
     background-color: rgb(220, 220, 22);
 }
 
-#bog1 {
+.image1 {
     height: 600px;
-    width: 350px;
+    width: 400px;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
-#bog2 {
-
+.image1:hover {
+    z-index: 11;
+    transform: scale(1.15); /* increase scale to make image bigger */
+    filter: brightness(1.15); /* increase brightness to make image brighter */
 }
 
-#bog3 {
-
-}
-
-#bog4 {
-    
-}
-
-#bog5 {
+.image2 {
     height: 600px;
-    width: 350px;
+    width: 400px;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.image2:hover {
+    z-index: 11;
+    transform: scale(1.15); /* increase scale to make image bigger */
+    filter: brightness(1.15); /* increase brightness to make image brighter */
+}
+
+.image3 {
+    height: 600px;
+    width: 400px;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.image3:hover {
+    z-index: 11;
+    transform: scale(1.1); /* increase scale to make image bigger */
+    filter: brightness(1.1); /* increase brightness to make image brighter */
+}
+
+#boget {
+    z-index: 1;
+    /**position: absolute;**/
+    height: 700px;
+    width: 462px;
+}
+
+#bogto {
+    z-index: 5;
+    /**position: absolute;**/
+    height: 700px;
+    width: 462px;
+}
+
+#bogtre {
+    z-index: 10;
+    /**position: absolute;**/
+    height: 700px;
+    width: 462px;
+}
+
+#bogfire {
+    z-index: 5;
+    /**position: absolute;**/
+    height: 700px;
+    width: 462px;
+}
+
+#bogfem {
+    z-index: 2;
+    /**position: absolute;**/
+    height: 700px;
+    width: 462px;
 }
 
 #citat h2 {
+    z-index: 1;
     color: #ba4a1a;
     display: flex;
     flex-direction: column;
     align-items: center;  
+    font-size: 17px;
 }
+
+/******** billedvifte ********/
+
 
 
 

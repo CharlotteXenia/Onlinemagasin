@@ -15,11 +15,25 @@
     <header>
         <div>
             <nav>
-                <a href="anmeldelser.html">Anmeldelser</a>
-                <a href="kategorier.html">Kategorier</a> <!--her skal der være en dropdown-menu med genre-->
+                <div class="venstremenu">
+                    <a href="anmeldelser.html">Anmeldelser</a>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="kategorier.html">Kategorier</a></button>
+                        <div class="dropdown-content">
+                          <a href="#">Romantik</a>
+                          <a href="#">Historiske<br>romaner</a>
+                          <a href="#">Science<br>fiction</a>
+                          <a href="#">Børn<br>0-2 år</a>
+                          <a href="kategorier.html".html">Flere...</a>
+                        </div>
+                    </div>
+                </div>
+                 <!--her skal der være en dropdown-menu med genre-->
                 <a id="logo" href="index.html"><img src="billeder/logo/Logo6.png"></a>
-                <a href="ommig.html">Om mig</a>
-                <a href="kontakt.html">Kontakt</a>
+                <div class="højremenu">
+                    <a href="ommig.html">Om mig</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -29,24 +43,24 @@
             <section>
                 <div class="femkort">
                     <div class="placeholder1">
-                        <a id="bog1" href="billeder/bøger/kode/221163.jpg">221163</a>
+                        <img class="image1" id="boget" src="billeder/bøger/kode/221163.jpg">
                     </div>
                     
                     <div class="placeholder2">
-                        <a id="bog2" href="billeder/bøger/kode/outlander.jpg">Outlander</a>
+                        <img class="image2" id="bogto" src="billeder/bøger/kode/outlander.jpg">
                     </div>
                     
                     <div class="placeholder3">
-                        <a id="bog3" href="billeder/bøger/kode/desyvsøstre.jpg">De syv søstre</a>
+                        <a class="image3" id="bogtre" href="desyvsøstre.html"><img src="billeder/bøger/kode/desyvsøstre.png" alt="De syv søstre"></a>
                     </div>
 
                     <div class="placeholder2">
-                        <a id="bog4" href="billeder/bøger/kode/theselection.jpg">The Selection</a>
+                        <img class="image2" id="bogfire" src="billeder/bøger/kode/theselection.jpg">
                     </div>
                 
                     <div class="placeholder1">
-                        <a id="bog5" href="billeder/bøger/kode/harrypotter.jpg">Harry Potter & Fønixordenen</a>
-                    </div>
+                        <img class="image1" id="bogfem" src="billeder/bøger/kode/harrypotter.jpg">
+                   </div>
                 </div>
             </section>
         </div>
