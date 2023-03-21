@@ -17,22 +17,49 @@ body {
 
 header {
     background-color: #EEE1CA;
+
     border-bottom-width: 2px; 
     border-bottom-color: #ba4a1a;
     border-bottom-style: solid;
+    
     font-size: 17px;
-    position: relative;
-    height: 100px;
+     
     padding-bottom: 10px;
+    padding-right: 60px;
+    
     position: fixed;
+
+    height: 100px;
     width: 100%;
+    
     z-index: 100;
 }
 
 #logo {
     width: 300px;
     height: 100px;
-    padding-bottom: 5px;   
+    padding-bottom: 5px;
+    display: flex;
+    
+}
+
+.højremenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.venstremenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    padding-bottom: 15px;
+    padding-right: 20px;
 }
 
 nav {
@@ -55,29 +82,23 @@ nav  a:hover{
     color: #e9bb60;
 }
 
-.venstremenu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 50px;
-    padding-bottom: 15px;
-}
 
-.højremenu {
-    display: flex;
-    flex-direction: row;
-    padding-left: 50px;
-    padding-bottom: 15px;
-}
+
 
 /******** Dropdown menu ********/
 
 /* Style the button */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
 .btn {
     display: inline-block;
     background-color: #EEE1CA;
     color: #ba4a1a;
-    padding: 8px 16px;
+    padding: 0px 0px;
     border: none;
     cursor: pointer;
   }
@@ -86,27 +107,37 @@ nav  a:hover{
   .dropdown-menu {
     display: none;
     position: absolute;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 5px; 
-    border: 1px solid #ba4a1a; padding: 5px; 
+    border: 1px solid #ba4a1a; 
     background-color: #EEE1CA;
-    font-size: 14px;
-    min-width: 160px;
-    
+    font-size: 13px;
+    min-width: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+        
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 100;
   }
   
+  .dropdown-menu a {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 5px 0;
+  }
+
   /* Show the dropdown menu when the button is hovered */
   .dropdown:hover .dropdown-menu {
     display: block;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 100;
   }
     
  
  
 
+/******** Forside ********/
 
 /******** main og kort ********/
 
@@ -146,19 +177,23 @@ nav  a:hover{
 .placeholder3 {
     height: 700px;
     width: 462px;
+    border-radius: 10px;
+
     /* background-color: rgb(220, 220, 22); */
 }
 
-
+/******** billedvifte ********/
 .image1 {     
     height: 600px;
     width: 400px;
+   
     transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 .image1:hover {
     transform: scale(1.19); 
     filter: brightness(1.28); 
+   
 }
 
 .image2 {
@@ -170,19 +205,22 @@ nav  a:hover{
 .image2:hover {
     transform: scale(1.1); 
     filter: brightness(1.1); 
+
 }
 
 .image3 {
-    height: 600px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    border-radius: 10px;
 }
 
 .image3:hover {
     transform: scale(1.02); 
-    filter: brightness(1.2); 
-}
+    filter: brightness(1); 
 
+}
 
 #boget {
     position: absolute;
@@ -190,10 +228,8 @@ nav  a:hover{
     height: 600px;
     width: 396px;
     z-index: 1;
-}
-
-boget:hover {
-    z-index: 10;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
 }
 
 #bogto {
@@ -202,14 +238,20 @@ boget:hover {
     height: 650px;
     width: 429px;
     z-index: 2;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
 }
 
 #bogtre {
+    background-image: url("billeder/bøger/kode/desyvsøstre.jpg");
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    /* right: px; */
     height: 700px;
     width: 462px;
     z-index: 3;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
 }
 
 #bogfire {
@@ -218,6 +260,8 @@ boget:hover {
     height: 650px;
     width: 429px;
     z-index: 2;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
 }
 
 #bogfem {
@@ -226,10 +270,12 @@ boget:hover {
     height: 600px;
     width: 396px;
     z-index: 1;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; 
 }
 #citat {
     z-index: 1;
-    color: #ba4a1a;
+    color: #cf9b84;
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -237,14 +283,65 @@ boget:hover {
     padding-top: 50px;
 }
 
-/******** billedvifte ********/
-
-
-
 
 /******** Anmeldelser ********/
 
+/**** alle ****/
 
+/**** specifik ****/
+.desyvsøstre {
+    padding-top: 120px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ba4a1a;
+    padding-right: 20px;
+}
+.cardholder {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 700px;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+.bookcover {
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    }
+
+.anmeldelsesboks {
+    display: flex;
+    background-color: #e9bb60;
+    height: 600px;
+    width: 1050px;
+
+    border-radius: 10px; 
+    
+    padding: 27.5px;
+
+    opacity: 0.5;
+}
+
+.tekst {
+    height: 600px;
+    width: 1050px;
+
+    color: #ba4a1a;
+}
+
+h2 {
+    font-size: larger;
+    color: #ba4a1a;
+}
+
+.anmeldelse {
+    font-size: 13px;
+}
 
 /******** Kategorier ********/
 
