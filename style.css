@@ -24,7 +24,9 @@ header {
     position: relative;
     height: 100px;
     padding-bottom: 10px;
-
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 #logo {
@@ -56,6 +58,7 @@ nav  a:hover{
 .venstremenu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding-right: 50px;
     padding-bottom: 15px;
 }
@@ -68,48 +71,40 @@ nav  a:hover{
 }
 
 /******** Dropdown menu ********/
-.dropbtn {
+
+/* Style the button */
+.btn {
+    display: inline-block;
     background-color: #EEE1CA;
     color: #ba4a1a;
-    padding: px;
-    font-size: 17px;
-    border:#ba4a1a
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
   }
   
-  /******** div til at holde på indhold ********/
-  .dropdown {
-    z-index: 100;
-    position: relative;
-    display: inline-block;
-  }
-  
-  /******** Dropdown indhold ********/
-  .dropdown-content {
+  /* Style the dropdown menu */
+  .dropdown-menu {
     display: none;
     position: absolute;
+    justify-content: space-between;
+    border-radius: 5px; 
+    border: 1px solid #ba4a1a; padding: 5px; 
     background-color: #EEE1CA;
-    min-width: 130px;
     font-size: 14px;
-    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    min-width: 160px;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
   }
   
-  /******** Link-indhold ********/
-  .dropdown-content a {
-    color: #ba4a1a;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .dropdown-content a:hover {
-    color: #e9bb60;
-  }
-  
-  .dropdown:hover .dropdown-content {
+  /* Show the dropdown menu when the button is hovered */
+  .dropdown:hover .dropdown-menu {
     display: block;
+    opacity: 0.8;
+    z-index: 100;
   }
+    
+ 
  
 
 
@@ -119,6 +114,7 @@ nav  a:hover{
     height: 775px;
     width: 100%;
     display: flex;
+    background-color: aqua;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -130,37 +126,39 @@ nav  a:hover{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 110px;
+    align-items: center;
     justify-content: center;
 }
 
 .placeholder1 {
     height: 600px;
-    width: 350px;
-    background-color: rgb(0, 128, 68);
+    width: 250px;
+    /* background-color: rgb(0, 128, 68); */
 }
 
 .placeholder2 {
     height: 650px;
-    width: 350px;
-    background-color: purple;
+    width: 429px;
+    /* background-color: purple; */
 }
 
 .placeholder3 {
     height: 700px;
-    width: 450px;
-    background-color: rgb(220, 220, 22);
+    width: 462px;
+    /* background-color: rgb(220, 220, 22); */
 }
 
-.image1 {
+
+.image1 {     
     height: 600px;
     width: 400px;
     transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 .image1:hover {
-    z-index: 11;
-    transform: scale(1.15); /* increase scale to make image bigger */
-    filter: brightness(1.15); /* increase brightness to make image brighter */
+    transform: scale(1.19); 
+    filter: brightness(1.28); 
 }
 
 .image2 {
@@ -170,9 +168,8 @@ nav  a:hover{
 }
 
 .image2:hover {
-    z-index: 11;
-    transform: scale(1.15); /* increase scale to make image bigger */
-    filter: brightness(1.15); /* increase brightness to make image brighter */
+    transform: scale(1.1); 
+    filter: brightness(1.1); 
 }
 
 .image3 {
@@ -182,53 +179,62 @@ nav  a:hover{
 }
 
 .image3:hover {
-    z-index: 11;
-    transform: scale(1.1); /* increase scale to make image bigger */
-    filter: brightness(1.1); /* increase brightness to make image brighter */
+    transform: scale(1.02); 
+    filter: brightness(1.2); 
 }
 
+
 #boget {
+    position: absolute;
+    left: 400px;
+    height: 600px;
+    width: 396px;
     z-index: 1;
-    /**position: absolute;**/
-    height: 700px;
-    width: 462px;
+}
+
+boget:hover {
+    z-index: 10;
 }
 
 #bogto {
-    z-index: 5;
-    /**position: absolute;**/
-    height: 700px;
-    width: 462px;
+    position: absolute;
+    left: 550px;
+    height: 650px;
+    width: 429px;
+    z-index: 2;
 }
 
 #bogtre {
-    z-index: 10;
-    /**position: absolute;**/
+    position: absolute;
+    /* right: px; */
     height: 700px;
     width: 462px;
+    z-index: 3;
 }
 
 #bogfire {
-    z-index: 5;
-    /**position: absolute;**/
-    height: 700px;
-    width: 462px;
+    position: absolute;
+    right: 550px;
+    height: 650px;
+    width: 429px;
+    z-index: 2;
 }
 
 #bogfem {
-    z-index: 2;
-    /**position: absolute;**/
-    height: 700px;
-    width: 462px;
+    position: absolute;
+    right: 400px;
+    height: 600px;
+    width: 396px;
+    z-index: 1;
 }
-
-#citat h2 {
+#citat {
     z-index: 1;
     color: #ba4a1a;
     display: flex;
     flex-direction: column;
     align-items: center;  
     font-size: 17px;
+    padding-top: 50px;
 }
 
 /******** billedvifte ********/
