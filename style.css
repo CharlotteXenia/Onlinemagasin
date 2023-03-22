@@ -6,10 +6,9 @@
 }
 
 body {
-    background-image: url(billeder/baggrund5.jpg);
+    background-image: url(billeder/baggrund/baggrund5.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-
 }
 
 
@@ -18,20 +17,21 @@ body {
 header {
     background-color: #EEE1CA;
 
-    border-bottom-width: 2px; 
+    border-bottom-width: 2px;
     border-bottom-color: #ba4a1a;
     border-bottom-style: solid;
-    
+
     font-size: 17px;
-     
+
     padding-bottom: 10px;
     padding-right: 60px;
-    
+
     position: fixed;
+    top: 0;
+    left: 0;
 
     height: 100px;
     width: 100%;
-    
     z-index: 100;
 }
 
@@ -40,14 +40,14 @@ header {
     height: 100px;
     padding-bottom: 5px;
     display: flex;
-    
+
 }
 
 .højremenu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+
     padding-bottom: 15px;
     padding-left: 20px;
 }
@@ -57,7 +57,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
+
     padding-bottom: 15px;
     padding-right: 20px;
 }
@@ -65,20 +65,20 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    padding-top: 10px; 
+    align-items: center;
+    padding-top: 10px;
 }
 
 nav a {
     text-decoration: none;
     color: #ba4a1a;
     margin-right: 20px;
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-nav  a:hover{
+nav a:hover {
     color: #e9bb60;
 }
 
@@ -87,12 +87,11 @@ nav  a:hover{
 
 /******** Dropdown menu ********/
 
-/* Style the button */
 
 .dropdown {
     position: relative;
     display: inline-block;
-  }
+}
 
 .btn {
     display: inline-block;
@@ -101,320 +100,183 @@ nav  a:hover{
     padding: 0px 0px;
     border: none;
     cursor: pointer;
-  }
-  
-  /* Style the dropdown menu */
-  .dropdown-menu {
+}
+
+.dropdown-menu {
     display: none;
     position: absolute;
     justify-content: center;
-    border-radius: 5px; 
-    border: 1px solid #ba4a1a; 
+    border-radius: 5px;
+    border: 1px solid #ba4a1a;
     background-color: #EEE1CA;
     font-size: 13px;
     min-width: 80px;
     padding-left: 15px;
     padding-right: 15px;
-        
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
-  }
-  
-  .dropdown-menu a {
+}
+
+.dropdown-menu a {
     display: block;
     text-align: center;
     padding: 0;
     margin: 5px 0;
-  }
+}
 
-  /* Show the dropdown menu when the button is hovered */
-  .dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
     display: block;
     opacity: 0.9;
     z-index: 100;
-  }
-    
-
-/******** Forside ********/
-
-/******** main og kort ********/
-
-/**.kortholder {
-    height: 775px;
-    width: 100%;
-    display: flex;
-    background-color: aqua;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}**/
-
-.femkort {
-    height: 775px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-top: 140px;
-    align-items: center;
-    justify-content: center;
 }
 
-.placeholder1 {
-    height: 600px;
-    width: 250px;
-    /* background-color: rgb(0, 128, 68); */
-}
-
-.placeholder2 {
-    height: 650px;
-    width: 429px;
-    /* background-color: purple; */
-}
-
-.placeholder3 {
-    height: 700px;
-    width: 462px;
-    border-radius: 10px;
-
-    /* background-color: rgb(220, 220, 22); */
-}
 
 /******** billedvifte ********/
-.image1 {     
-    height: 600px;
-    width: 400px;
-   
-    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+.femkort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    margin-right: 0px;
 }
 
-.image1:hover {
-    transform: scale(1.29); 
-    filter: brightness(1.28); 
-    z-index: 900;
-}
-
-.image2 {
-    height: 600px;
-    width: 400px;
-    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
-}
-
-.image2:hover {
-    transform: scale(1.19); 
-    filter: brightness(1.1); 
-
-}
-
-.image3 {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.femkort a img {
     transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
     border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.image3:hover {
-    transform: scale(1.1); 
-    filter: brightness(1); 
-
-}
-
-#boget {
-    position: fixed;
-    left: 400px;
-    height: 600px;
-    width: 396px;
-    z-index: 1;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
-    border-radius: 10px;
-}
-
-#boget:hover {
-    z-index: 10;
-}
-
-#bogto {
-    position: fixed;
-    left: 550px;
-    height: 650px;
-    width: 429px;
-    z-index: 2;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
-    border-radius: 10px;
-}
-
-#bogto:hover {
-    z-index: 10;
-}
-
-#bogtre {
-    background-image: url("billeder/bøger/kode/desyvsøstre.jpg");
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    height: 700px;
-    width: 462px;
+#king {
     z-index: 3;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
-    border-radius: 10px;
+    left: 350px;
 }
 
-
-#bogfire {
-    position: absolute;
-    right: 550px;
-    height: 650px;
-    width: 429px;
-    z-index: 2;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
-    border-radius: 10px;
-}
-
-#bogfire:hover {
+#king:hover {
     z-index: 10;
 }
 
-#bogfem {
-    position: absolute;
-    right: 400px;
-    height: 600px;
-    width: 396px;
-    z-index: 1;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 10px; 
+#outlander {
+    z-index: 4;
+    left: 160px;
 }
 
-#bogfem:hover {
+#outlander:hover {
     z-index: 10;
 }
+
+#soestre {
+    z-index: 5;
+}
+
+#select {
+    z-index: 4;
+    right: 160px;
+}
+
+#select:hover {
+    z-index: 10;
+}
+
+#potter {
+    z-index: 3;
+    right: 350px;
+}
+
+#potter:hover {
+    z-index: 10;
+}
+
+.femkort a img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+    z-index: 6;
+}
+
 
 #citat {
     z-index: +1;
     color: #cf9b84;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     font-size: 17px;
-    padding-top: 85px;
+    padding-top: 20px;
 }
 
+/***** anmeldelser *****/
 
-/******** Anmeldelser ********/
+h1 {
+    color: #ba4a1a;
+    display: flex;
+    justify-content: center;
+}
 
-/**** alle ****/
-
-/**** specifik ****/
-.anmeldelses-padding {
-    padding-top: 120px;
+h2 {
+    font-size: larger;
 }
 
 .overskrift {
-    padding: 0px;
+    margin-top: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-h1 {
+.indhold {
     display: flex;
     justify-content: center;
-    color: #ba4a1a;
-    padding-right: 20px;
-    font-size: 30px;
+    align-items: center;
 }
 
-.wrapper {
+.wrap {
     display: flex;
-    justify-content: center;
-    padding-left: 255px;
-    padding-right: 255px;
-}
-
-.cardholder1 {
-    width: 100%;
-    height: 700px;
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.cardholder2 {
-    width: 100%;
-    height: 700px;
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 75px;
 }
 
 .bookcover {
-    position: fixed;
-    height: 550px;
-    width: 375px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+   
 }
 
-.bookcover2 {
-    position: fixed;
-    height: 550px;
-    width: 375px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+.bookcover img {
     border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    color: #ba4a1a;
+    padding: 25px;
+    padding-right: 50px;
+    
+}
+
+.info p {
+    padding-right: 25px;
 }
 
 .anmeldelsesboks {
-    display: flex;
+    color: #ba4a1a;
     background-color: #EEE1CA;
     background-color: rgba(255, 255, 255, 0.5);
-    height: 700px;
+    height: 750px;
     width: 1100px;
 
     border-radius: 10px;
     border: 2px solid #e9bb60;
 
     padding: 27.5px;
-
 }
 
-.tekst {
-    height: 600px;
-    width: 1100px;
-    color: #ba4a1a;
-}
-
-h2 {
-    font-size: larger;
-    color: #ba4a1a;
-}
-
-.anmeldelse {
-    font-size: 15px;
-}
-
-.infoholder {
-    display: flex;
-    padding-right: 90px;
-    padding-top: 570px;
-}
-
-.infoholder2 {
-    display: flex;
-    padding-right: 40px;
-    padding-top: 570px;
-}
-
-.info {
-    color: #ba4a1a;
-    width: 180px;
-}
-
-.informationer {
-    color: #ba4a1a;
-    width: 180px;
-
-}
-
-.image4 {
-    padding-top: 25px;
-}
 
 
 /******** Kategorier ********/
