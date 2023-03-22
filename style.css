@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(billeder/baggrund/baggrund5.jpg);
+    background-image: url(billeder/baggrund5.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -155,7 +155,7 @@ nav  a:hover{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 110px;
+    padding-top: 140px;
     align-items: center;
     justify-content: center;
 }
@@ -189,9 +189,9 @@ nav  a:hover{
 }
 
 .image1:hover {
-    transform: scale(1.19); 
+    transform: scale(1.29); 
     filter: brightness(1.28); 
-   
+    z-index: 900;
 }
 
 .image2 {
@@ -201,7 +201,7 @@ nav  a:hover{
 }
 
 .image2:hover {
-    transform: scale(1.1); 
+    transform: scale(1.19); 
     filter: brightness(1.1); 
 
 }
@@ -215,13 +215,13 @@ nav  a:hover{
 }
 
 .image3:hover {
-    transform: scale(1.02); 
+    transform: scale(1.1); 
     filter: brightness(1); 
 
 }
 
 #boget {
-    position: absolute;
+    position: fixed;
     left: 400px;
     height: 600px;
     width: 396px;
@@ -230,8 +230,12 @@ nav  a:hover{
     border-radius: 10px;
 }
 
+#boget:hover {
+    z-index: 10;
+}
+
 #bogto {
-    position: absolute;
+    position: fixed;
     left: 550px;
     height: 650px;
     width: 429px;
@@ -240,17 +244,22 @@ nav  a:hover{
     border-radius: 10px;
 }
 
+#bogto:hover {
+    z-index: 10;
+}
+
 #bogtre {
     background-image: url("billeder/bøger/kode/desyvsøstre.jpg");
     background-size: cover;
     background-position: center;
-    position: absolute;
+    position: fixed;
     height: 700px;
     width: 462px;
     z-index: 3;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); 
     border-radius: 10px;
 }
+
 
 #bogfire {
     position: absolute;
@@ -262,6 +271,10 @@ nav  a:hover{
     border-radius: 10px;
 }
 
+#bogfire:hover {
+    z-index: 10;
+}
+
 #bogfem {
     position: absolute;
     right: 400px;
@@ -271,14 +284,19 @@ nav  a:hover{
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px; 
 }
+
+#bogfem:hover {
+    z-index: 10;
+}
+
 #citat {
-    z-index: 1;
+    z-index: +1;
     color: #cf9b84;
     display: flex;
     flex-direction: column;
     align-items: center;  
     font-size: 17px;
-    padding-top: 50px;
+    padding-top: 85px;
 }
 
 
@@ -286,7 +304,8 @@ nav  a:hover{
 
 /**** alle ****/
 
-/**** specifik ****/.anmeldelses-padding {
+/**** specifik ****/
+.anmeldelses-padding {
     padding-top: 120px;
 }
 
@@ -326,7 +345,15 @@ h1 {
 }
 
 .bookcover {
-    position: absolute;
+    position: fixed;
+    height: 550px;
+    width: 375px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.bookcover2 {
+    position: fixed;
     height: 550px;
     width: 375px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
@@ -368,14 +395,20 @@ h2 {
     padding-top: 570px;
 }
 
+.infoholder2 {
+    display: flex;
+    padding-right: 40px;
+    padding-top: 570px;
+}
+
 .info {
     color: #ba4a1a;
-    width: 120px;
+    width: 180px;
 }
 
 .informationer {
     color: #ba4a1a;
-    width: 150px;
+    width: 180px;
 
 }
 
