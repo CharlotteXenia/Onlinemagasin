@@ -45,7 +45,7 @@ header {
     justify-content: center;
 }
 
-.højremenu {
+.hoejremenu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
