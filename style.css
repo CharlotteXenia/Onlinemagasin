@@ -9,6 +9,7 @@ body {
     background-image: url(billeder/baggrund/baggrund5.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    /* overflow-x: hidden; */
 }
 
 
@@ -40,7 +41,7 @@ header {
     height: 100px;
     padding-bottom: 5px;
     display: flex;
-
+    justify-content: center;
 }
 
 .højremenu {
@@ -138,7 +139,10 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 125px;
-    margin-right: 0px;
+
+    height: 500px;
+
+    /* background-color: aqua; */
 }
 
 .femkort a img {
@@ -146,11 +150,12 @@ nav a:hover {
     border-radius: 10px;
     position: relative;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
 }
 
 #king {
     z-index: 3;
-    left: 350px;
+    left: 375px;
 }
 
 #king:hover {
@@ -159,7 +164,8 @@ nav a:hover {
 
 #outlander {
     z-index: 4;
-    left: 160px;
+    height: 500px;
+    left: 200px;
 }
 
 #outlander:hover {
@@ -168,11 +174,12 @@ nav a:hover {
 
 #soestre {
     z-index: 5;
+    height: 550px;
 }
 
 #select {
     z-index: 4;
-    right: 160px;
+    right: 200px;
 }
 
 #select:hover {
@@ -181,7 +188,7 @@ nav a:hover {
 
 #potter {
     z-index: 3;
-    right: 350px;
+    right: 375px;
 }
 
 #potter:hover {
@@ -202,7 +209,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 17px;
-    padding-top: 20px;
+    margin-top: 75px;
 }
 
 /******** overskrifter ********/
@@ -282,23 +289,30 @@ h2 {
 }
 
 /******** anmeldelser - alle ********/
+.anmeldelsesholder {
+    display: flex;
+    justify-content: space-around;
 
-/******** anmeldelser - alle ********/
-
+    margin-left: 200px;
+    margin-right: 200px;
+}
 
 .scrollboks {
-    height: 700px;
-    width: 1100px;
+    height: 550px;
+    width: 1000px;
     right: 350px;
 
     overflow-y: scroll;
 
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     align-items: center;
 
-    background-color: aqua;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    /* margin-left: 200px
+    margin-right: 200px; */
+
 }
 
 .scrollboks::-webkit-scrollbar {
@@ -306,39 +320,205 @@ h2 {
 }
 
 .bogwrap {
-    height: 2000px;
-    width: 300px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;;
-
+    height: 400px;
+    width: 1000px;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
 
-    background-color: rgb(219, 37, 128);
+    padding-bottom: 25px;
+    margin-top: 400px;
+    
+    font-size: 14px;
+}
+
+.bogwrap a {
+    border-radius: 10px;
+    color: #ba4a1a;
 }
 
 .bogboks {
+    display: flex;
+    justify-content: space-around; 
+
     color: #ba4a1a;
-    /** background-color: #EEE1CA;
-    background-color: rgba(255, 255, 255, 0.5); **/
+    background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 150px;
     width: 300px;
 
     border-radius: 10px;
     border: 2px solid #e9bb60;
 
-    padding: 27.5px;
-
-    background-color: yellow;
+    margin-bottom: 25px;
 }
+
+.bogboks img {
+    height: 147px;
+    width: 100px;
+    
+    float: left;
+}
+
+.bogboks a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration-color: #ba4a1a;
+}
+
+.boginfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    overflow: hidden;
+}
+
+.filterogsortering {
+    display: flex;
+    justify-content: space-around; 
+
+    color: #ba4a1a;
+    background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 400px;
+    width: 300px;
+
+    border-radius: 10px;
+    border: 2px solid #e9bb60;
+
+    margin-bottom: 25px;
+    padding: 25px;
+    padding-top: 175px;
+}
+
+
 
 /******** Kategorier ********/
 
+.kategoriholder {
+    display: flex;
+    justify-content: space-around;
 
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.scrollbokskat {
+    height: 550px;
+    width: 1000px;
+    right: 350px;
+
+    /* overflow-y: scroll; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 0px;
+    padding-bottom: 50px;
+    /* margin-left: 200px
+    margin-right: 200px; */
+
+}
+
+/* .scrollbokskat::-webkit-scrollbar {
+    display: none;
+} */
+
+.katwrap {
+    height: 400px;
+    width: 1000px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-bottom: 25px;
+    margin-top: 150px;
+    
+    font-size: 14px;
+}
+
+.katwrap a {
+    border-radius: 10px;
+    color: #ba4a1a;
+}
+
+.katbox {
+    display: flex;
+    justify-content: space-around; 
+
+    color: #ba4a1a;
+    background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 250px;
+    width: 300px;
+
+    border-radius: 10px;
+    border: 2px solid #e9bb60;
+
+    margin-bottom: 25px;
+}
+
+.katbox a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration-color: #ba4a1a;
+    height: 90px;
+    width: 300px;
+}
 
 /******** Om mig ********/
+
+.infoboksholder {
+    display: flex;
+    justify-content: space-around;
+    height: 550px;
+    width: 1150px;
+
+    margin-left: 300px;
+
+    background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    font-size: 12px;
+    
+    border-radius: 10px;
+    border: 2px solid #e9bb60;
+}
+
+.infoboks {
+    color: #ba4a1a;
+    height: 600px;
+    width: 775px;
+
+    padding: 27.5px;
+}
+
+.infoboksholder img {
+    height: 250px;
+    width: 250px;
+
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    margin-top: 50px;
+    margin-right: 50px;
+}
 
 
 
