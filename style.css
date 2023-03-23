@@ -9,7 +9,8 @@ body {
     background-image: url(billeder/baggrund/baggrund5.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    /* overflow-x: hidden; */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
 
@@ -155,6 +156,7 @@ nav a:hover {
 
 #king {
     z-index: 3;
+    height: 450px;
     left: 375px;
 }
 
@@ -179,6 +181,7 @@ nav a:hover {
 
 #select {
     z-index: 4;
+    height: 500px;
     right: 200px;
 }
 
@@ -188,6 +191,7 @@ nav a:hover {
 
 #potter {
     z-index: 3;
+    height: 450px;
     right: 375px;
 }
 
@@ -245,7 +249,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 75px;
+    /* padding-bottom: 75px; */
 }
 
 .bookcover {
@@ -266,8 +270,9 @@ h2 {
     display: flex;
     align-items: center;
     color: #ba4a1a;
-    padding: 25px;
-    padding-right: 50px;
+    font-size: 13px;
+    padding-top: 40px;
+    padding-right: 40px;
     
 }
 
@@ -277,15 +282,16 @@ h2 {
 
 .anmeldelsesboks {
     color: #ba4a1a;
+    font-size: 13px;
     background-color: #EEE1CA;
     background-color: rgba(255, 255, 255, 0.5);
-    height: 750px;
+    height: 550px;
     width: 1100px;
 
     border-radius: 10px;
     border: 2px solid #e9bb60;
 
-    padding: 27.5px;
+    padding: 15px;
 }
 
 /******** anmeldelser - alle ********/
@@ -303,6 +309,8 @@ h2 {
     right: 350px;
 
     overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 
     display: flex;
     justify-content: space-around;
@@ -317,6 +325,7 @@ h2 {
 
 .scrollboks::-webkit-scrollbar {
     display: none;
+
 }
 
 .bogwrap {
