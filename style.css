@@ -479,13 +479,16 @@ h4 {
 
 /******** Om mig ********/
 
+.info {
+    display: flex;
+    justify-content: center;
+}
+
 .infoboksholder {
     display: flex;
     justify-content: space-around;
-    height: 550px;
+    height: 500px;
     width: 1150px;
-
-    margin-left: 300px;
 
     background-color: #EEE1CA;
     background-color: rgba(255, 255, 255, 0.5);
@@ -501,7 +504,7 @@ h4 {
     height: 600px;
     width: 775px;
 
-    padding: 27.5px;
+    padding: 15px;
 }
 
 .infoboksholder img {
@@ -519,24 +522,18 @@ h4 {
 
 .kontakt {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 
-    height: 550px;
-    width: 1200px;
-
-    margin-left: 250px;
 }
 
 .kontakttekst {
     color: #ba4a1a;
     font-size: 13px;
-    /* background-color: #EEE1CA;
-    background-color: rgba(255, 255, 255, 0.5); */
     height: 550px;
     width: 500px;
 
     border-radius: 10px;
-    /* border: 2px solid #e9bb60; */
 
     padding: 15px;
 }
@@ -544,13 +541,11 @@ h4 {
 .kontaktholder {
     color: #ba4a1a;
     font-size: 13px;
-    /* background-color: #EEE1CA;
-    background-color: rgba(255, 255, 255, 0.5); */
+
     height: 550px;
     width: 500px;
 
     border-radius: 10px;
-    /* border: 2px solid #e9bb60; */
 
     padding: 15px;
 }
