@@ -487,7 +487,7 @@ h4 {
 .infoboksholder {
     display: flex;
     justify-content: space-around;
-    height: 500px;
+    height: 525px;
     width: 1150px;
 
     background-color: #EEE1CA;
