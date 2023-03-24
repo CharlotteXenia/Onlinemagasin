@@ -9,8 +9,8 @@ body {
     background-image: url(billeder/baggrund/baggrund5.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden; 
 }
 
 
@@ -84,11 +84,7 @@ nav a:hover {
     color: #e9bb60;
 }
 
-
-
-
 /******** Dropdown menu ********/
-
 
 .dropdown {
     position: relative;
@@ -133,7 +129,6 @@ nav a:hover {
     z-index: 100;
 }
 
-
 /******** billedvifte ********/
 .femkort {
     display: flex;
@@ -142,8 +137,6 @@ nav a:hover {
     margin-top: 125px;
 
     height: 500px;
-
-    /* background-color: aqua; */
 }
 
 .femkort a img {
@@ -205,7 +198,6 @@ nav a:hover {
     z-index: 6;
 }
 
-
 #citat {
     z-index: +1;
     color: #cf9b84;
@@ -228,7 +220,13 @@ h2 {
     font-size: larger;
 }
 
+h3 {
+    font-size: medium;
+}
 
+h4 {
+    font-size: 12px;
+}
 
 .overskrift {
     margin-top: 100px;
@@ -249,7 +247,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    /* padding-bottom: 75px; */
 }
 
 .bookcover {
@@ -295,6 +292,7 @@ h2 {
 }
 
 /******** anmeldelser - alle ********/
+
 .anmeldelsesholder {
     display: flex;
     justify-content: space-around;
@@ -320,12 +318,10 @@ h2 {
     padding-bottom: 50px;
     /* margin-left: 200px
     margin-right: 200px; */
-
 }
 
 .scrollboks::-webkit-scrollbar {
     display: none;
-
 }
 
 .bogwrap {
@@ -411,8 +407,6 @@ h2 {
     padding-top: 175px;
 }
 
-
-
 /******** Kategorier ********/
 
 .kategoriholder {
@@ -428,22 +422,13 @@ h2 {
     width: 1000px;
     right: 350px;
 
-    /* overflow-y: scroll; */
-
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     padding-top: 0px;
     padding-bottom: 50px;
-    /* margin-left: 200px
-    margin-right: 200px; */
-
 }
-
-/* .scrollbokskat::-webkit-scrollbar {
-    display: none;
-} */
 
 .katwrap {
     height: 400px;
@@ -529,6 +514,108 @@ h2 {
     margin-right: 50px;
 }
 
-
-
 /******** Kontakt ********/
+
+.kontakt {
+    display: flex;
+    justify-content: space-around;
+
+    height: 550px;
+    width: 1200px;
+
+    margin-left: 250px;
+}
+
+.kontakttekst {
+    color: #ba4a1a;
+    font-size: 13px;
+    /* background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5); */
+    height: 550px;
+    width: 500px;
+
+    border-radius: 10px;
+    /* border: 2px solid #e9bb60; */
+
+    padding: 15px;
+}
+
+.kontaktholder {
+    color: #ba4a1a;
+    font-size: 13px;
+    /* background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5); */
+    height: 550px;
+    width: 500px;
+
+    border-radius: 10px;
+    /* border: 2px solid #e9bb60; */
+
+    padding: 15px;
+}
+
+#some {
+    margin-top: 20px;
+}
+
+#some a {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+#some img {
+    height: 25px;
+    width: 25px;
+}
+
+.tekstfelt {
+    margin-left: 30px;
+    /* margin-top: 15px; */
+}
+
+.lillefelt {
+    color: #ba4a1a;
+    font-size: 13px;
+    background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 50px;
+    width: 400px;
+
+    border-radius: 10px;
+    border: 2px solid #e9bb60;
+
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.stortfelt {
+    color: #ba4a1a;
+    font-size: 13px;
+    background-color: #EEE1CA;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 300px;
+    width: 400px;
+
+    border-radius: 10px;
+    border: 2px solid #e9bb60;
+
+    padding: 15px;
+}
+
+button {
+    background-color: #e9bb60;
+    color: #ba4a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 350px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
