@@ -247,6 +247,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .bookcover {
@@ -282,7 +283,7 @@ h4 {
     font-size: 13px;
     background-color: #EEE1CA;
     background-color: rgba(255, 255, 255, 0.5);
-    height: 550px;
+    height: 575px;
     width: 1100px;
 
     border-radius: 10px;
